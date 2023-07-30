@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Handwritten Mathematical Expression Recognition</title>
+
+<script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
+
+</head>
+
+<body>
+<h1>Handwritten Mathematical Expression Recognition</a> </h1>
+
+
+<hr>
+
+
+
+<br>
+<p>Here is the converted version of the mathematical expression you submitted:</p>
+
+<div lang="latex">{{ user_latex }}</div>
+
+<br>
+<p>The calculated result is:</p>
+<p>{{ user_number }}</p>
+
+
+<br>
+
+
+
+ <button id="myButton" class="float-left submit-button" >Start Over</button>
+
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "http://127.0.0.1:5000/reset";
+    };
+</script>
+
+
+
+<br>
+<br>
+<hr>
+<p>Developed by Samanvaya Tripathi</p>
+
+
+</body>
+</html>

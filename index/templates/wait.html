@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Handwritten Mathematical Expression Recognition</title>
+<style></style>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+
+
+<body>
+<h1>Handwritten Mathematical Expression Recognition</a> </h1>
+
+
+<hr>
+
+
+
+<br>
+<p>File uploaded successfully.</p>
+<br>
+<p>Calculating......</p>
+<br>
+<p>We will redirect you to the page once your result is ready.</p>
+
+<script>
+    
+
+    console.log("hi")
+
+	$.ajax({
+	type: "POST",
+    url: "/trigger-python",
+    error: function(){
+        // will fire when timeout is reached
+	   window.location.href = 'http://127.0.0.1:5000/error';
+    },
+    success: function(){
+        //do something
+       alert('Calculation Finished');
+       	window.location.href = 'http://127.0.0.1:5000/result';
+    },
+    timeout: 3000 // sets timeout to 3 seconds
+});
+
+
+
+</script>
+
+
+<br>
+<hr>
+<p>Developed by Samanvaya Tripathi</p>
+
+
+</body>
+</html>
